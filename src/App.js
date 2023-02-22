@@ -10,6 +10,7 @@ const fetchData = async ()=>{
   const data =await res.json();
   setJoke(data.value)
   console.log(data)
+  audio.play()
 }
 
 useEffect (()=>{
